@@ -1,0 +1,7 @@
+[
+  {
+    "route": "POST /form/person",
+    "parameters": "(name,birthDate,address)",
+    "status": 200
+  }
+]

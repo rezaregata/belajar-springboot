@@ -1,0 +1,7 @@
+[
+  {
+    "route": "GET /hello",
+    "parameters": "(name)",
+    "status": 200
+  }
+]

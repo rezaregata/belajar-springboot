@@ -1,1 +1,211 @@
-{"events":[{"defined_class":"dev_reza.spring_webmvc.controller.DateControllerTest","event":"call","id":5479,"lineno":22,"method_id":"date","path":"dev_reza/spring_webmvc/controller/DateControllerTest.java","receiver":{"class":"dev_reza.spring_webmvc.controller.DateControllerTest","object_id":745358381,"value":"dev_reza.spring_webmvc.controller.DateControllerTest@2c6d442d"},"static":false,"thread_id":1},{"event":"call","http_server_request":{"headers":{},"path_info":"/date","protocol":"HTTP/1.1","request_method":"GET"},"id":5480,"thread_id":1},{"defined_class":"dev_reza.spring_webmvc.controller.DateController","event":"call","id":5501,"lineno":21,"method_id":"getDate","parameters":[{"class":"java.time.LocalDate","kind":"req","name":"date","object_id":934117774,"value":"2020-10-10"}],"path":"dev_reza/spring_webmvc/controller/DateController.java","receiver":{"class":"dev_reza.spring_webmvc.controller.DateController","object_id":1264380765,"value":"dev_reza.spring_webmvc.controller.DateController@4b5ceb5d"},"static":false,"thread_id":1},{"elapsed":0.0011248,"event":"return","exceptions":[{"class":"java.lang.IllegalArgumentException","lineno":342,"message":"Cannot format given Object as a Date","object_id":1021071701,"path":"DateFormat.java"}],"id":5502,"parent_id":5501,"thread_id":1},{"elapsed":0.03117702,"event":"return","exceptions":[{"class":"jakarta.servlet.ServletException","lineno":1022,"message":"Request processing failed: java.lang.IllegalArgumentException: Cannot format given Object as a Date","object_id":1134231960,"path":"FrameworkServlet.java"},{"class":"java.lang.IllegalArgumentException","lineno":342,"message":"Cannot format given Object as a Date","object_id":1021071701,"path":"DateFormat.java"}],"id":5503,"parent_id":5480,"thread_id":1},{"elapsed":0.05111027,"event":"return","exceptions":[{"class":"java.lang.Error","lineno":110,"message":"jakarta.servlet.ServletException: Request processing failed: java.lang.IllegalArgumentException: Cannot format given Object as a Date","object_id":583057596,"path":"ReflectiveType.java"},{"class":"jakarta.servlet.ServletException","lineno":1022,"message":"Request processing failed: java.lang.IllegalArgumentException: Cannot format given Object as a Date","object_id":1134231960,"path":"FrameworkServlet.java"},{"class":"java.lang.IllegalArgumentException","lineno":342,"message":"Cannot format given Object as a Date","object_id":1021071701,"path":"DateFormat.java"}],"id":5504,"parent_id":5479,"thread_id":1}],"classMap":[{"children":[{"children":[{"children":[{"children":[{"labels":[],"location":"dev_reza/spring_webmvc/controller/DateController.java:21","name":"getDate","static":false,"type":"function"}],"location":"dev_reza/spring_webmvc/controller/DateController.java","name":"DateController","static":false,"type":"class"},{"children":[{"labels":[],"location":"dev_reza/spring_webmvc/controller/DateControllerTest.java:22","name":"date","static":false,"type":"function"}],"location":"dev_reza/spring_webmvc/controller/DateControllerTest.java","name":"DateControllerTest","static":false,"type":"class"}],"name":"controller","type":"package"}],"name":"spring_webmvc","type":"package"}],"name":"dev_reza","type":"package"}],"version":"1.2","metadata":{"name":"Date controller date","app":"spring-webmvc","language":{"name":"java","version":"17.0.10+11-LTS-240","engine":"Java HotSpot(TM) 64-Bit Server VM"},"client":{"name":"appmap-java","url":"https://github.com/appland/appmap-java"},"recorder":{"name":"junit","type":"tests"},"recording":{"defined_class":"dev_reza.spring_webmvc.controller.DateControllerTest","method_id":"date"},"source_location":"dev_reza/spring_webmvc/controller/DateControllerTest.java:22","frameworks":[{"name":"JUnit","version":"5"}],"test_status":"failed","test_failure":{"message":"jakarta.servlet.ServletException: Request processing failed: java.lang.IllegalArgumentException: Cannot format given Object as a Date","location":"dev_reza/spring_webmvc/controller/DateControllerTest.java:22"}},"eventUpdates":{}}
+{
+  "events": [
+    {
+      "defined_class": "dev_reza.spring_webmvc.controller.DateControllerTest",
+      "event": "call",
+      "id": 1,
+      "lineno": 22,
+      "method_id": "date",
+      "path": "dev_reza/spring_webmvc/controller/DateControllerTest.java",
+      "receiver": {
+        "class": "dev_reza.spring_webmvc.controller.DateControllerTest",
+        "object_id": 745358381,
+        "value": "dev_reza.spring_webmvc.controller.DateControllerTest@2c6d442d"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "event": "call",
+      "http_server_request": {
+        "headers": {},
+        "path_info": "/date",
+        "protocol": "HTTP/1.1",
+        "request_method": "GET"
+      },
+      "id": 2,
+      "thread_id": 1
+    },
+    {
+      "defined_class": "dev_reza.spring_webmvc.controller.DateController",
+      "event": "call",
+      "id": 3,
+      "lineno": 21,
+      "method_id": "getDate",
+      "parameters": [
+        {
+          "class": "java.time.LocalDate",
+          "kind": "req",
+          "name": "date",
+          "object_id": 934117774,
+          "value": "2020-10-10"
+        }
+      ],
+      "path": "dev_reza/spring_webmvc/controller/DateController.java",
+      "receiver": {
+        "class": "dev_reza.spring_webmvc.controller.DateController",
+        "object_id": 1264380765,
+        "value": "dev_reza.spring_webmvc.controller.DateController@4b5ceb5d"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.0011248,
+      "event": "return",
+      "exceptions": [
+        {
+          "class": "java.lang.IllegalArgumentException",
+          "lineno": 342,
+          "message": "Cannot format given Object as a Date",
+          "object_id": 1021071701,
+          "path": "DateFormat.java"
+        }
+      ],
+      "id": 4,
+      "parent_id": 3,
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.03117702,
+      "event": "return",
+      "exceptions": [
+        {
+          "class": "jakarta.servlet.ServletException",
+          "lineno": 1022,
+          "message": "Request processing failed: java.lang.IllegalArgumentException: Cannot format given Object as a Date",
+          "object_id": 1134231960,
+          "path": "FrameworkServlet.java"
+        },
+        {
+          "class": "java.lang.IllegalArgumentException",
+          "lineno": 342,
+          "message": "Cannot format given Object as a Date",
+          "object_id": 1021071701,
+          "path": "DateFormat.java"
+        }
+      ],
+      "id": 5,
+      "parent_id": 2,
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.05111027,
+      "event": "return",
+      "exceptions": [
+        {
+          "class": "java.lang.Error",
+          "lineno": 110,
+          "message": "jakarta.servlet.ServletException: Request processing failed: java.lang.IllegalArgumentException: Cannot format given Object as a Date",
+          "object_id": 583057596,
+          "path": "ReflectiveType.java"
+        },
+        {
+          "class": "jakarta.servlet.ServletException",
+          "lineno": 1022,
+          "message": "Request processing failed: java.lang.IllegalArgumentException: Cannot format given Object as a Date",
+          "object_id": 1134231960,
+          "path": "FrameworkServlet.java"
+        },
+        {
+          "class": "java.lang.IllegalArgumentException",
+          "lineno": 342,
+          "message": "Cannot format given Object as a Date",
+          "object_id": 1021071701,
+          "path": "DateFormat.java"
+        }
+      ],
+      "id": 6,
+      "parent_id": 1,
+      "thread_id": 1
+    }
+  ],
+  "version": "1.2",
+  "metadata": {
+    "name": "Date controller date",
+    "app": "spring-webmvc",
+    "language": {
+      "name": "java",
+      "version": "17.0.10+11-LTS-240",
+      "engine": "Java HotSpot(TM) 64-Bit Server VM"
+    },
+    "client": {
+      "name": "appmap-java",
+      "url": "https://github.com/appland/appmap-java"
+    },
+    "recorder": {
+      "name": "junit",
+      "type": "tests"
+    },
+    "recording": {
+      "defined_class": "dev_reza.spring_webmvc.controller.DateControllerTest",
+      "method_id": "date"
+    },
+    "source_location": "dev_reza/spring_webmvc/controller/DateControllerTest.java:22",
+    "frameworks": [
+      {
+        "name": "JUnit",
+        "version": "5"
+      }
+    ],
+    "test_status": "failed",
+    "test_failure": {
+      "message": "jakarta.servlet.ServletException: Request processing failed: java.lang.IllegalArgumentException: Cannot format given Object as a Date",
+      "location": "dev_reza/spring_webmvc/controller/DateControllerTest.java:22"
+    }
+  },
+  "classMap": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "name": "getDate",
+                      "type": "function",
+                      "static": false,
+                      "location": "dev_reza/spring_webmvc/controller/DateController.java:21"
+                    }
+                  ],
+                  "name": "DateController",
+                  "type": "class"
+                },
+                {
+                  "children": [
+                    {
+                      "name": "date",
+                      "type": "function",
+                      "static": false,
+                      "location": "dev_reza/spring_webmvc/controller/DateControllerTest.java:22"
+                    }
+                  ],
+                  "name": "DateControllerTest",
+                  "type": "class"
+                }
+              ],
+              "name": "controller",
+              "type": "package"
+            }
+          ],
+          "name": "spring_webmvc",
+          "type": "package"
+        }
+      ],
+      "name": "dev_reza",
+      "type": "package"
+    },
+    {
+      "type": "http",
+      "name": "HTTP server requests",
+      "children": [
+        {
+          "type": "route",
+          "name": "GET /date"
+        }
+      ]
+    }
+  ]
+}

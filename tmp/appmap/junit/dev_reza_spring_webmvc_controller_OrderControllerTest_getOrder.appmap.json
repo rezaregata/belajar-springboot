@@ -1,1 +1,179 @@
-{"events":[{"defined_class":"dev_reza.spring_webmvc.controller.OrderControllerTest","event":"call","id":5553,"lineno":23,"method_id":"getOrder","path":"dev_reza/spring_webmvc/controller/OrderControllerTest.java","receiver":{"class":"dev_reza.spring_webmvc.controller.OrderControllerTest","object_id":1753868052,"value":"dev_reza.spring_webmvc.controller.OrderControllerTest@6889e714"},"static":false,"thread_id":1},{"event":"call","http_server_request":{"headers":{},"path_info":"/orders/11/products/123","protocol":"HTTP/1.1","request_method":"GET"},"id":5554,"thread_id":1},{"defined_class":"dev_reza.spring_webmvc.controller.OrderController","event":"call","id":5571,"lineno":19,"method_id":"order","parameters":[{"class":"java.lang.String","kind":"req","name":"orderId","object_id":466396438,"value":"11"},{"class":"java.lang.String","kind":"req","name":"productId","object_id":216998824,"value":"123"}],"path":"dev_reza/spring_webmvc/controller/OrderController.java","receiver":{"class":"dev_reza.spring_webmvc.controller.OrderController","object_id":2139051082,"value":"dev_reza.spring_webmvc.controller.OrderController@7f7f544a"},"static":false,"thread_id":1},{"elapsed":0.00102465,"event":"return","id":5572,"parent_id":5571,"return_value":{"class":"java.lang.String","object_id":598978484,"value":"Orders 11 Products 123"},"thread_id":1},{"elapsed":0.03054382,"event":"return","http_server_response":{"headers":{"Content-Length":"22","Content-Type":"text/plain;charset=UTF-8"},"status":200},"id":5573,"parent_id":5554,"thread_id":1},{"elapsed":0.05314457,"event":"return","id":5574,"parent_id":5553,"thread_id":1}],"classMap":[{"children":[{"children":[{"children":[{"children":[{"labels":[],"location":"dev_reza/spring_webmvc/controller/OrderControllerTest.java:23","name":"getOrder","static":false,"type":"function"}],"location":"dev_reza/spring_webmvc/controller/OrderControllerTest.java","name":"OrderControllerTest","static":false,"type":"class"},{"children":[{"labels":[],"location":"dev_reza/spring_webmvc/controller/OrderController.java:19","name":"order","static":false,"type":"function"}],"location":"dev_reza/spring_webmvc/controller/OrderController.java","name":"OrderController","static":false,"type":"class"}],"name":"controller","type":"package"}],"name":"spring_webmvc","type":"package"}],"name":"dev_reza","type":"package"}],"version":"1.2","metadata":{"name":"Order controller get order","app":"spring-webmvc","language":{"name":"java","version":"17.0.10+11-LTS-240","engine":"Java HotSpot(TM) 64-Bit Server VM"},"client":{"name":"appmap-java","url":"https://github.com/appland/appmap-java"},"recorder":{"name":"junit","type":"tests"},"recording":{"defined_class":"dev_reza.spring_webmvc.controller.OrderControllerTest","method_id":"getOrder"},"source_location":"dev_reza/spring_webmvc/controller/OrderControllerTest.java:23","frameworks":[{"name":"JUnit","version":"5"}],"test_status":"succeeded"},"eventUpdates":{"5554":{"event":"call","http_server_request":{"headers":{},"normalized_path_info":"/orders/{orderId}/products/{productId}","path_info":"/orders/11/products/123","protocol":"HTTP/1.1","request_method":"GET"},"id":5554,"thread_id":1}}}
+{
+  "events": [
+    {
+      "defined_class": "dev_reza.spring_webmvc.controller.OrderControllerTest",
+      "event": "call",
+      "id": 1,
+      "lineno": 23,
+      "method_id": "getOrder",
+      "path": "dev_reza/spring_webmvc/controller/OrderControllerTest.java",
+      "receiver": {
+        "class": "dev_reza.spring_webmvc.controller.OrderControllerTest",
+        "object_id": 1753868052,
+        "value": "dev_reza.spring_webmvc.controller.OrderControllerTest@6889e714"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "event": "call",
+      "http_server_request": {
+        "headers": {},
+        "normalized_path_info": "/orders/{orderId}/products/{productId}",
+        "path_info": "/orders/11/products/123",
+        "protocol": "HTTP/1.1",
+        "request_method": "GET"
+      },
+      "id": 2,
+      "thread_id": 1
+    },
+    {
+      "defined_class": "dev_reza.spring_webmvc.controller.OrderController",
+      "event": "call",
+      "id": 3,
+      "lineno": 19,
+      "method_id": "order",
+      "parameters": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "orderId",
+          "object_id": 466396438,
+          "value": "11"
+        },
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "productId",
+          "object_id": 216998824,
+          "value": "123"
+        }
+      ],
+      "path": "dev_reza/spring_webmvc/controller/OrderController.java",
+      "receiver": {
+        "class": "dev_reza.spring_webmvc.controller.OrderController",
+        "object_id": 2139051082,
+        "value": "dev_reza.spring_webmvc.controller.OrderController@7f7f544a"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.00102465,
+      "event": "return",
+      "id": 4,
+      "parent_id": 3,
+      "return_value": {
+        "class": "java.lang.String",
+        "object_id": 598978484,
+        "value": "Orders 11 Products 123"
+      },
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.03054382,
+      "event": "return",
+      "http_server_response": {
+        "headers": {
+          "Content-Length": "22",
+          "Content-Type": "text/plain;charset=UTF-8"
+        },
+        "status": 200
+      },
+      "id": 5,
+      "parent_id": 2,
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.05314457,
+      "event": "return",
+      "id": 6,
+      "parent_id": 1,
+      "thread_id": 1
+    }
+  ],
+  "version": "1.2",
+  "metadata": {
+    "name": "Order controller get order",
+    "app": "spring-webmvc",
+    "language": {
+      "name": "java",
+      "version": "17.0.10+11-LTS-240",
+      "engine": "Java HotSpot(TM) 64-Bit Server VM"
+    },
+    "client": {
+      "name": "appmap-java",
+      "url": "https://github.com/appland/appmap-java"
+    },
+    "recorder": {
+      "name": "junit",
+      "type": "tests"
+    },
+    "recording": {
+      "defined_class": "dev_reza.spring_webmvc.controller.OrderControllerTest",
+      "method_id": "getOrder"
+    },
+    "source_location": "dev_reza/spring_webmvc/controller/OrderControllerTest.java:23",
+    "frameworks": [
+      {
+        "name": "JUnit",
+        "version": "5"
+      }
+    ],
+    "test_status": "succeeded"
+  },
+  "classMap": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "name": "getOrder",
+                      "type": "function",
+                      "static": false,
+                      "location": "dev_reza/spring_webmvc/controller/OrderControllerTest.java:23"
+                    }
+                  ],
+                  "name": "OrderControllerTest",
+                  "type": "class"
+                },
+                {
+                  "children": [
+                    {
+                      "name": "order",
+                      "type": "function",
+                      "static": false,
+                      "location": "dev_reza/spring_webmvc/controller/OrderController.java:19"
+                    }
+                  ],
+                  "name": "OrderController",
+                  "type": "class"
+                }
+              ],
+              "name": "controller",
+              "type": "package"
+            }
+          ],
+          "name": "spring_webmvc",
+          "type": "package"
+        }
+      ],
+      "name": "dev_reza",
+      "type": "package"
+    },
+    {
+      "type": "http",
+      "name": "HTTP server requests",
+      "children": [
+        {
+          "type": "route",
+          "name": "GET /orders/{orderId}/products/{productId}"
+        }
+      ]
+    }
+  ]
+}

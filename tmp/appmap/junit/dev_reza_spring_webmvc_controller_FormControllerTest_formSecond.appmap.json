@@ -1,1 +1,183 @@
-{"events":[{"defined_class":"dev_reza.spring_webmvc.controller.FormControllerTest","event":"call","id":4805,"lineno":37,"method_id":"formSecond","path":"dev_reza/spring_webmvc/controller/FormControllerTest.java","receiver":{"class":"dev_reza.spring_webmvc.controller.FormControllerTest","object_id":1107370131,"value":"dev_reza.spring_webmvc.controller.FormControllerTest@42012093"},"static":false,"thread_id":1},{"event":"call","http_server_request":{"headers":{"Content-Type":"application/x-www-form-urlencoded;charset=UTF-8"},"path_info":"/formsecond","protocol":"HTTP/1.1","request_method":"POST"},"id":4806,"thread_id":1},{"defined_class":"dev_reza.spring_webmvc.controller.FormController","event":"call","id":4813,"lineno":25,"method_id":"formSecond","parameters":[{"class":"java.lang.String","kind":"req","name":"name","object_id":1075420510,"value":"Reza"}],"path":"dev_reza/spring_webmvc/controller/FormController.java","receiver":{"class":"dev_reza.spring_webmvc.controller.FormController","object_id":1261832834,"value":"dev_reza.spring_webmvc.controller.FormController@4b360a82"},"static":false,"thread_id":1},{"elapsed":7.998E-4,"event":"return","id":4814,"parent_id":4813,"return_value":{"class":"java.lang.String","object_id":554577711,"value":"<div>Hello Reza</div>\n"},"thread_id":1},{"elapsed":0.02841078,"event":"return","http_server_response":{"headers":{"Content-Length":"22","Content-Type":"text/html;charset=UTF-8"},"status":200},"id":4815,"parent_id":4806,"thread_id":1},{"elapsed":0.03880089,"event":"return","id":4816,"parent_id":4805,"thread_id":1}],"classMap":[{"children":[{"children":[{"children":[{"children":[{"labels":[],"location":"dev_reza/spring_webmvc/controller/FormController.java:25","name":"formSecond","static":false,"type":"function"}],"location":"dev_reza/spring_webmvc/controller/FormController.java","name":"FormController","static":false,"type":"class"},{"children":[{"labels":[],"location":"dev_reza/spring_webmvc/controller/FormControllerTest.java:37","name":"formSecond","static":false,"type":"function"}],"location":"dev_reza/spring_webmvc/controller/FormControllerTest.java","name":"FormControllerTest","static":false,"type":"class"}],"name":"controller","type":"package"}],"name":"spring_webmvc","type":"package"}],"name":"dev_reza","type":"package"}],"version":"1.2","metadata":{"name":"Form controller form second","app":"spring-webmvc","language":{"name":"java","version":"17.0.10+11-LTS-240","engine":"Java HotSpot(TM) 64-Bit Server VM"},"client":{"name":"appmap-java","url":"https://github.com/appland/appmap-java"},"recorder":{"name":"junit","type":"tests"},"recording":{"defined_class":"dev_reza.spring_webmvc.controller.FormControllerTest","method_id":"formSecond"},"source_location":"dev_reza/spring_webmvc/controller/FormControllerTest.java:37","frameworks":[{"name":"JUnit","version":"5"}],"test_status":"succeeded"},"eventUpdates":{"4806":{"event":"call","http_server_request":{"headers":{"Content-Type":"application/x-www-form-urlencoded;charset=UTF-8"},"normalized_path_info":"/formsecond","path_info":"/formsecond","protocol":"HTTP/1.1","request_method":"POST"},"id":4806,"message":[{"class":"java.lang.String","kind":"req","name":"name","object_id":1075420510,"value":"Reza"}],"thread_id":1}}}
+{
+  "events": [
+    {
+      "defined_class": "dev_reza.spring_webmvc.controller.FormControllerTest",
+      "event": "call",
+      "id": 1,
+      "lineno": 37,
+      "method_id": "formSecond",
+      "path": "dev_reza/spring_webmvc/controller/FormControllerTest.java",
+      "receiver": {
+        "class": "dev_reza.spring_webmvc.controller.FormControllerTest",
+        "object_id": 1107370131,
+        "value": "dev_reza.spring_webmvc.controller.FormControllerTest@42012093"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "event": "call",
+      "http_server_request": {
+        "headers": {
+          "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"
+        },
+        "normalized_path_info": "/formsecond",
+        "path_info": "/formsecond",
+        "protocol": "HTTP/1.1",
+        "request_method": "POST"
+      },
+      "id": 2,
+      "message": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "name",
+          "object_id": 1075420510,
+          "value": "Reza"
+        }
+      ],
+      "thread_id": 1
+    },
+    {
+      "defined_class": "dev_reza.spring_webmvc.controller.FormController",
+      "event": "call",
+      "id": 3,
+      "lineno": 25,
+      "method_id": "formSecond",
+      "parameters": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "name",
+          "object_id": 1075420510,
+          "value": "Reza"
+        }
+      ],
+      "path": "dev_reza/spring_webmvc/controller/FormController.java",
+      "receiver": {
+        "class": "dev_reza.spring_webmvc.controller.FormController",
+        "object_id": 1261832834,
+        "value": "dev_reza.spring_webmvc.controller.FormController@4b360a82"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.0007998,
+      "event": "return",
+      "id": 4,
+      "parent_id": 3,
+      "return_value": {
+        "class": "java.lang.String",
+        "object_id": 554577711,
+        "value": "<div>Hello Reza</div>\n"
+      },
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.02841078,
+      "event": "return",
+      "http_server_response": {
+        "headers": {
+          "Content-Length": "22",
+          "Content-Type": "text/html;charset=UTF-8"
+        },
+        "status": 200
+      },
+      "id": 5,
+      "parent_id": 2,
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.03880089,
+      "event": "return",
+      "id": 6,
+      "parent_id": 1,
+      "thread_id": 1
+    }
+  ],
+  "version": "1.2",
+  "metadata": {
+    "name": "Form controller form second",
+    "app": "spring-webmvc",
+    "language": {
+      "name": "java",
+      "version": "17.0.10+11-LTS-240",
+      "engine": "Java HotSpot(TM) 64-Bit Server VM"
+    },
+    "client": {
+      "name": "appmap-java",
+      "url": "https://github.com/appland/appmap-java"
+    },
+    "recorder": {
+      "name": "junit",
+      "type": "tests"
+    },
+    "recording": {
+      "defined_class": "dev_reza.spring_webmvc.controller.FormControllerTest",
+      "method_id": "formSecond"
+    },
+    "source_location": "dev_reza/spring_webmvc/controller/FormControllerTest.java:37",
+    "frameworks": [
+      {
+        "name": "JUnit",
+        "version": "5"
+      }
+    ],
+    "test_status": "succeeded"
+  },
+  "classMap": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "name": "formSecond",
+                      "type": "function",
+                      "static": false,
+                      "location": "dev_reza/spring_webmvc/controller/FormController.java:25"
+                    }
+                  ],
+                  "name": "FormController",
+                  "type": "class"
+                },
+                {
+                  "children": [
+                    {
+                      "name": "formSecond",
+                      "type": "function",
+                      "static": false,
+                      "location": "dev_reza/spring_webmvc/controller/FormControllerTest.java:37"
+                    }
+                  ],
+                  "name": "FormControllerTest",
+                  "type": "class"
+                }
+              ],
+              "name": "controller",
+              "type": "package"
+            }
+          ],
+          "name": "spring_webmvc",
+          "type": "package"
+        }
+      ],
+      "name": "dev_reza",
+      "type": "package"
+    },
+    {
+      "type": "http",
+      "name": "HTTP server requests",
+      "children": [
+        {
+          "type": "route",
+          "name": "POST /formsecond"
+        }
+      ]
+    }
+  ]
+}

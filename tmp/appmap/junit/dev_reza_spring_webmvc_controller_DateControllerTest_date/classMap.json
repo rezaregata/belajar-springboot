@@ -1,0 +1,54 @@
+[
+  {
+    "children": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "name": "getDate",
+                    "type": "function",
+                    "static": false,
+                    "location": "dev_reza/spring_webmvc/controller/DateController.java:21"
+                  }
+                ],
+                "name": "DateController",
+                "type": "class"
+              },
+              {
+                "children": [
+                  {
+                    "name": "date",
+                    "type": "function",
+                    "static": false,
+                    "location": "dev_reza/spring_webmvc/controller/DateControllerTest.java:22"
+                  }
+                ],
+                "name": "DateControllerTest",
+                "type": "class"
+              }
+            ],
+            "name": "controller",
+            "type": "package"
+          }
+        ],
+        "name": "spring_webmvc",
+        "type": "package"
+      }
+    ],
+    "name": "dev_reza",
+    "type": "package"
+  },
+  {
+    "type": "http",
+    "name": "HTTP server requests",
+    "children": [
+      {
+        "type": "route",
+        "name": "GET /date"
+      }
+    ]
+  }
+]

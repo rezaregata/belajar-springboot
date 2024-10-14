@@ -1,1 +1,131 @@
-{"events":[{"event":"call","http_server_request":{"headers":{"host":"localhost:59718","connection":"keep-alive","accept":"text/plain, application/json, application/*+json, */*","user-agent":"Java/17.0.10"},"path_info":"/hello","protocol":"HTTP/1.1","request_method":"GET"},"id":4672,"thread_id":24},{"defined_class":"dev_reza.spring_webmvc.controller.HelloController","event":"call","id":4673,"lineno":16,"method_id":"helloWorld","parameters":[{"class":"org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleHttpServletResponse","kind":"req","name":"response","object_id":2126661423,"value":"org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleHttpServletResponse@7ec2472f"},{"class":"org.apache.catalina.connector.RequestFacade","kind":"req","name":"request","object_id":1967021036,"value":"org.apache.catalina.connector.RequestFacade@753e5bec"}],"path":"dev_reza/spring_webmvc/controller/HelloController.java","receiver":{"class":"dev_reza.spring_webmvc.controller.HelloController","object_id":1275768911,"value":"dev_reza.spring_webmvc.controller.HelloController@4c0ab04f"},"static":false,"thread_id":24},{"elapsed":0.01625514,"event":"return","id":4674,"parent_id":4673,"thread_id":24},{"elapsed":0.02575951,"event":"return","http_server_response":{"headers":{},"status":200},"id":4675,"parent_id":4672,"thread_id":24}],"classMap":[{"children":[{"children":[{"children":[{"children":[{"labels":[],"location":"dev_reza/spring_webmvc/controller/HelloController.java:16","name":"helloWorld","static":false,"type":"function"}],"location":"dev_reza/spring_webmvc/controller/HelloController.java","name":"HelloController","static":false,"type":"class"}],"name":"controller","type":"package"}],"name":"spring_webmvc","type":"package"}],"name":"dev_reza","type":"package"}],"version":"1.2","metadata":{"name":"GET /hello (200) - 13:14:05.909","app":"spring-webmvc","language":{"name":"java","version":"17.0.10+11-LTS-240","engine":"Java HotSpot(TM) 64-Bit Server VM"},"client":{"name":"appmap-java","url":"https://github.com/appland/appmap-java"},"recorder":{"name":"request_recording","type":"requests"},"recording":{}},"eventUpdates":{"4672":{"event":"call","http_server_request":{"headers":{"host":"localhost:59718","connection":"keep-alive","accept":"text/plain, application/json, application/*+json, */*","user-agent":"Java/17.0.10"},"normalized_path_info":"/hello","path_info":"/hello","protocol":"HTTP/1.1","request_method":"GET"},"id":4672,"thread_id":24}}}
+{
+  "events": [
+    {
+      "event": "call",
+      "http_server_request": {
+        "headers": {
+          "host": "localhost:59718",
+          "connection": "keep-alive",
+          "accept": "text/plain, application/json, application/*+json, */*",
+          "user-agent": "Java/17.0.10"
+        },
+        "normalized_path_info": "/hello",
+        "path_info": "/hello",
+        "protocol": "HTTP/1.1",
+        "request_method": "GET"
+      },
+      "id": 1,
+      "thread_id": 24
+    },
+    {
+      "defined_class": "dev_reza.spring_webmvc.controller.HelloController",
+      "event": "call",
+      "id": 2,
+      "lineno": 16,
+      "method_id": "helloWorld",
+      "parameters": [
+        {
+          "class": "org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleHttpServletResponse",
+          "kind": "req",
+          "name": "response",
+          "object_id": 2126661423,
+          "value": "org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleHttpServletResponse@7ec2472f"
+        },
+        {
+          "class": "org.apache.catalina.connector.RequestFacade",
+          "kind": "req",
+          "name": "request",
+          "object_id": 1967021036,
+          "value": "org.apache.catalina.connector.RequestFacade@753e5bec"
+        }
+      ],
+      "path": "dev_reza/spring_webmvc/controller/HelloController.java",
+      "receiver": {
+        "class": "dev_reza.spring_webmvc.controller.HelloController",
+        "object_id": 1275768911,
+        "value": "dev_reza.spring_webmvc.controller.HelloController@4c0ab04f"
+      },
+      "static": false,
+      "thread_id": 24
+    },
+    {
+      "elapsed": 0.01625514,
+      "event": "return",
+      "id": 3,
+      "parent_id": 2,
+      "thread_id": 24
+    },
+    {
+      "elapsed": 0.02575951,
+      "event": "return",
+      "http_server_response": {
+        "headers": {},
+        "status": 200
+      },
+      "id": 4,
+      "parent_id": 1,
+      "thread_id": 24
+    }
+  ],
+  "version": "1.2",
+  "metadata": {
+    "name": "GET /hello (200) - 13:14:05.909",
+    "app": "spring-webmvc",
+    "language": {
+      "name": "java",
+      "version": "17.0.10+11-LTS-240",
+      "engine": "Java HotSpot(TM) 64-Bit Server VM"
+    },
+    "client": {
+      "name": "appmap-java",
+      "url": "https://github.com/appland/appmap-java"
+    },
+    "recorder": {
+      "name": "request_recording",
+      "type": "requests"
+    },
+    "recording": {}
+  },
+  "classMap": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "name": "helloWorld",
+                      "type": "function",
+                      "static": false,
+                      "location": "dev_reza/spring_webmvc/controller/HelloController.java:16"
+                    }
+                  ],
+                  "name": "HelloController",
+                  "type": "class"
+                }
+              ],
+              "name": "controller",
+              "type": "package"
+            }
+          ],
+          "name": "spring_webmvc",
+          "type": "package"
+        }
+      ],
+      "name": "dev_reza",
+      "type": "package"
+    },
+    {
+      "type": "http",
+      "name": "HTTP server requests",
+      "children": [
+        {
+          "type": "route",
+          "name": "GET /hello"
+        }
+      ]
+    }
+  ]
+}

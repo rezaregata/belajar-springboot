@@ -1,0 +1,33 @@
+{
+  "name": "Date controller test get date",
+  "app": "spring-webmvc",
+  "language": {
+    "name": "java",
+    "version": "17.0.10+11-LTS-240",
+    "engine": "Java HotSpot(TM) 64-Bit Server VM"
+  },
+  "client": {
+    "name": "appmap-java",
+    "url": "https://github.com/appland/appmap-java"
+  },
+  "recorder": {
+    "name": "junit",
+    "type": "tests"
+  },
+  "recording": {
+    "defined_class": "dev_reza.spring_webmvc.controller.DateControllerTest",
+    "method_id": "testGetDate"
+  },
+  "source_location": "dev_reza/spring_webmvc/controller/DateControllerTest.java:22",
+  "frameworks": [
+    {
+      "name": "JUnit",
+      "version": "5"
+    }
+  ],
+  "test_status": "failed",
+  "test_failure": {
+    "message": "Multiple Exceptions (2):\nStatus expected:<200> but was:<400>\nResponse content\r\nExpected: a string containing \"Date : 20240902\"\r\n     but: was \"\"",
+    "location": "dev_reza/spring_webmvc/controller/DateControllerTest.java:24"
+  }
+}

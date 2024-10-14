@@ -1,0 +1,7 @@
+[
+  {
+    "route": "POST /upload/profile",
+    "parameters": "(name)",
+    "status": 200
+  }
+]

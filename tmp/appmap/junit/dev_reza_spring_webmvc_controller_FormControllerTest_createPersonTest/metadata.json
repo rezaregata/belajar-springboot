@@ -1,0 +1,34 @@
+{
+  "name": "Form controller create person",
+  "app": "spring-webmvc",
+  "language": {
+    "name": "java",
+    "version": "17.0.10+11-LTS-240",
+    "engine": "Java HotSpot(TM) 64-Bit Server VM"
+  },
+  "client": {
+    "name": "appmap-java",
+    "url": "https://github.com/appland/appmap-java"
+  },
+  "recorder": {
+    "name": "junit",
+    "type": "tests"
+  },
+  "recording": {
+    "defined_class": "dev_reza.spring_webmvc.controller.FormControllerTest",
+    "method_id": "createPersonTest"
+  },
+  "git": {
+    "repository": "https://github.com/rezaregata/belajar-springboot.git",
+    "branch": "master",
+    "commit": "dc84a1074fb5c859218e8e8ddad299de8a0932f9"
+  },
+  "source_location": "src/test/java/dev_reza/spring_webmvc/controller/FormControllerTest.java:51",
+  "frameworks": [
+    {
+      "name": "JUnit",
+      "version": "5"
+    }
+  ],
+  "test_status": "succeeded"
+}

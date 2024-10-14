@@ -1,1 +1,180 @@
-{"events":[{"defined_class":"dev_reza.spring_webmvc.controller.HelloControllerMockTest","event":"call","id":6213,"lineno":40,"method_id":"helloGuest","path":"dev_reza/spring_webmvc/controller/HelloControllerMockTest.java","receiver":{"class":"dev_reza.spring_webmvc.controller.HelloControllerMockTest","object_id":1814984081,"value":"dev_reza.spring_webmvc.controller.HelloControllerMockTest@6c2e7591"},"static":false,"thread_id":1},{"event":"call","http_server_request":{"headers":{},"path_info":"/hello","protocol":"HTTP/1.1","request_method":"GET"},"id":6214,"thread_id":1},{"defined_class":"dev_reza.spring_webmvc.controller.HelloController","event":"call","id":6215,"lineno":21,"method_id":"helloWorld","parameters":[{"class":"org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleHttpServletResponse","kind":"req","name":"response","object_id":462965669,"value":"org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleHttpServletResponse@1b984ba5"},{"class":"org.springframework.mock.web.MockHttpServletRequest","kind":"req","name":"request","object_id":403879268,"value":"org.springframework.mock.web.MockHttpServletRequest@1812b564"}],"path":"dev_reza/spring_webmvc/controller/HelloController.java","receiver":{"class":"dev_reza.spring_webmvc.controller.HelloController","object_id":1798241454,"value":"dev_reza.spring_webmvc.controller.HelloController@6b2efcae"},"static":false,"thread_id":1},{"elapsed":0.00443874,"event":"return","id":6216,"parent_id":6215,"thread_id":1},{"elapsed":0.04788302,"event":"return","http_server_response":{"headers":{},"status":200},"id":6217,"parent_id":6214,"thread_id":1},{"elapsed":0.07305197,"event":"return","id":6218,"parent_id":6213,"thread_id":1}],"classMap":[{"children":[{"children":[{"children":[{"children":[{"labels":[],"location":"dev_reza/spring_webmvc/controller/HelloControllerMockTest.java:40","name":"helloGuest","static":false,"type":"function"}],"location":"dev_reza/spring_webmvc/controller/HelloControllerMockTest.java","name":"HelloControllerMockTest","static":false,"type":"class"},{"children":[{"labels":[],"location":"dev_reza/spring_webmvc/controller/HelloController.java:21","name":"helloWorld","static":false,"type":"function"}],"location":"dev_reza/spring_webmvc/controller/HelloController.java","name":"HelloController","static":false,"type":"class"}],"name":"controller","type":"package"}],"name":"spring_webmvc","type":"package"}],"name":"dev_reza","type":"package"}],"version":"1.2","metadata":{"name":"Hello controller mock hello guest","app":"spring-webmvc","language":{"name":"java","version":"17.0.10+11-LTS-240","engine":"Java HotSpot(TM) 64-Bit Server VM"},"client":{"name":"appmap-java","url":"https://github.com/appland/appmap-java"},"recorder":{"name":"junit","type":"tests"},"recording":{"defined_class":"dev_reza.spring_webmvc.controller.HelloControllerMockTest","method_id":"helloGuest"},"source_location":"dev_reza/spring_webmvc/controller/HelloControllerMockTest.java:40","frameworks":[{"name":"JUnit","version":"5"}],"test_status":"succeeded"},"eventUpdates":{"6214":{"event":"call","http_server_request":{"headers":{},"normalized_path_info":"/hello","path_info":"/hello","protocol":"HTTP/1.1","request_method":"GET"},"id":6214,"message":[{"class":"java.lang.String","kind":"req","name":"name","object_id":991026870,"value":"Reza"}],"thread_id":1}}}
+{
+  "events": [
+    {
+      "defined_class": "dev_reza.spring_webmvc.controller.HelloControllerMockTest",
+      "event": "call",
+      "id": 1,
+      "lineno": 40,
+      "method_id": "helloGuest",
+      "path": "dev_reza/spring_webmvc/controller/HelloControllerMockTest.java",
+      "receiver": {
+        "class": "dev_reza.spring_webmvc.controller.HelloControllerMockTest",
+        "object_id": 1814984081,
+        "value": "dev_reza.spring_webmvc.controller.HelloControllerMockTest@6c2e7591"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "event": "call",
+      "http_server_request": {
+        "headers": {},
+        "normalized_path_info": "/hello",
+        "path_info": "/hello",
+        "protocol": "HTTP/1.1",
+        "request_method": "GET"
+      },
+      "id": 2,
+      "message": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "name",
+          "object_id": 991026870,
+          "value": "Reza"
+        }
+      ],
+      "thread_id": 1
+    },
+    {
+      "defined_class": "dev_reza.spring_webmvc.controller.HelloController",
+      "event": "call",
+      "id": 3,
+      "lineno": 21,
+      "method_id": "helloWorld",
+      "parameters": [
+        {
+          "class": "org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleHttpServletResponse",
+          "kind": "req",
+          "name": "response",
+          "object_id": 462965669,
+          "value": "org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleHttpServletResponse@1b984ba5"
+        },
+        {
+          "class": "org.springframework.mock.web.MockHttpServletRequest",
+          "kind": "req",
+          "name": "request",
+          "object_id": 403879268,
+          "value": "org.springframework.mock.web.MockHttpServletRequest@1812b564"
+        }
+      ],
+      "path": "dev_reza/spring_webmvc/controller/HelloController.java",
+      "receiver": {
+        "class": "dev_reza.spring_webmvc.controller.HelloController",
+        "object_id": 1798241454,
+        "value": "dev_reza.spring_webmvc.controller.HelloController@6b2efcae"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.00443874,
+      "event": "return",
+      "id": 4,
+      "parent_id": 3,
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.04788302,
+      "event": "return",
+      "http_server_response": {
+        "headers": {},
+        "status": 200
+      },
+      "id": 5,
+      "parent_id": 2,
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.07305197,
+      "event": "return",
+      "id": 6,
+      "parent_id": 1,
+      "thread_id": 1
+    }
+  ],
+  "version": "1.2",
+  "metadata": {
+    "name": "Hello controller mock hello guest",
+    "app": "spring-webmvc",
+    "language": {
+      "name": "java",
+      "version": "17.0.10+11-LTS-240",
+      "engine": "Java HotSpot(TM) 64-Bit Server VM"
+    },
+    "client": {
+      "name": "appmap-java",
+      "url": "https://github.com/appland/appmap-java"
+    },
+    "recorder": {
+      "name": "junit",
+      "type": "tests"
+    },
+    "recording": {
+      "defined_class": "dev_reza.spring_webmvc.controller.HelloControllerMockTest",
+      "method_id": "helloGuest"
+    },
+    "source_location": "dev_reza/spring_webmvc/controller/HelloControllerMockTest.java:40",
+    "frameworks": [
+      {
+        "name": "JUnit",
+        "version": "5"
+      }
+    ],
+    "test_status": "succeeded"
+  },
+  "classMap": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "name": "helloGuest",
+                      "type": "function",
+                      "static": false,
+                      "location": "dev_reza/spring_webmvc/controller/HelloControllerMockTest.java:40"
+                    }
+                  ],
+                  "name": "HelloControllerMockTest",
+                  "type": "class"
+                },
+                {
+                  "children": [
+                    {
+                      "name": "helloWorld",
+                      "type": "function",
+                      "static": false,
+                      "location": "dev_reza/spring_webmvc/controller/HelloController.java:21"
+                    }
+                  ],
+                  "name": "HelloController",
+                  "type": "class"
+                }
+              ],
+              "name": "controller",
+              "type": "package"
+            }
+          ],
+          "name": "spring_webmvc",
+          "type": "package"
+        }
+      ],
+      "name": "dev_reza",
+      "type": "package"
+    },
+    {
+      "type": "http",
+      "name": "HTTP server requests",
+      "children": [
+        {
+          "type": "route",
+          "name": "GET /hello"
+        }
+      ]
+    }
+  ]
+}

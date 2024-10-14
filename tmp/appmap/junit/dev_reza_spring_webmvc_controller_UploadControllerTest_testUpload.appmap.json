@@ -1,1 +1,195 @@
-{"events":[{"defined_class":"dev_reza.spring_webmvc.controller.UploadControllerTest","event":"call","id":5651,"lineno":29,"method_id":"testUpload","path":"src/test/java/dev_reza/spring_webmvc/controller/UploadControllerTest.java","receiver":{"class":"dev_reza.spring_webmvc.controller.UploadControllerTest","object_id":1772106148,"value":"dev_reza.spring_webmvc.controller.UploadControllerTest@69a031a4"},"static":false,"thread_id":1},{"event":"call","http_server_request":{"headers":{"Content-Type":"multipart/form-data;charset=UTF-8"},"path_info":"/upload/profile","protocol":"HTTP/1.1","request_method":"POST"},"id":5652,"thread_id":1},{"defined_class":"dev_reza.spring_webmvc.controller.UploadController","event":"call","id":5665,"lineno":25,"method_id":"upload","parameters":[{"class":"java.lang.String","kind":"req","name":"name","object_id":1699593080,"value":"Reza"},{"class":"org.springframework.mock.web.MockMultipartFile","kind":"req","name":"file","object_id":498759457,"value":"org.springframework.mock.web.MockMultipartFile@1dba7721"}],"path":"src/main/java/dev_reza/spring_webmvc/controller/UploadController.java","receiver":{"class":"dev_reza.spring_webmvc.controller.UploadController","object_id":736233691,"value":"dev_reza.spring_webmvc.controller.UploadController@2be208db"},"static":false,"thread_id":1},{"elapsed":0.00172105,"event":"return","id":5666,"parent_id":5665,"return_value":{"class":"java.lang.String","object_id":485998677,"value":"Success save Reza to upload\\profile.png"},"thread_id":1},{"elapsed":0.03497228,"event":"return","http_server_response":{"headers":{"Content-Length":"39","Content-Type":"text/plain;charset=UTF-8"},"status":200},"id":5667,"parent_id":5652,"thread_id":1},{"elapsed":0.05808722,"event":"return","id":5668,"parent_id":5651,"thread_id":1}],"classMap":[{"children":[{"children":[{"children":[{"children":[{"labels":[],"location":"src/test/java/dev_reza/spring_webmvc/controller/UploadControllerTest.java:29","name":"testUpload","static":false,"type":"function"}],"location":"src/test/java/dev_reza/spring_webmvc/controller/UploadControllerTest.java","name":"UploadControllerTest","static":false,"type":"class"},{"children":[{"labels":[],"location":"src/main/java/dev_reza/spring_webmvc/controller/UploadController.java:25","name":"upload","static":false,"type":"function"}],"location":"src/main/java/dev_reza/spring_webmvc/controller/UploadController.java","name":"UploadController","static":false,"type":"class"}],"name":"controller","type":"package"}],"name":"spring_webmvc","type":"package"}],"name":"dev_reza","type":"package"}],"version":"1.2","metadata":{"name":"Upload controller test upload","app":"spring-webmvc","language":{"name":"java","version":"17.0.10+11-LTS-240","engine":"Java HotSpot(TM) 64-Bit Server VM"},"client":{"name":"appmap-java","url":"https://github.com/appland/appmap-java"},"recorder":{"name":"junit","type":"tests"},"recording":{"defined_class":"dev_reza.spring_webmvc.controller.UploadControllerTest","method_id":"testUpload"},"git":{"repository":"https://github.com/rezaregata/belajar-springboot.git","branch":"master","commit":"7f356b7825ff0e7f2aeab371752056c9c3cb9e30"},"source_location":"src/test/java/dev_reza/spring_webmvc/controller/UploadControllerTest.java:29","frameworks":[{"name":"JUnit","version":"5"}],"test_status":"succeeded"},"eventUpdates":{"5652":{"event":"call","http_server_request":{"headers":{"Content-Type":"multipart/form-data;charset=UTF-8"},"normalized_path_info":"/upload/profile","path_info":"/upload/profile","protocol":"HTTP/1.1","request_method":"POST"},"id":5652,"message":[{"class":"java.lang.String","kind":"req","name":"name","object_id":1699593080,"value":"Reza"}],"thread_id":1}}}
+{
+  "events": [
+    {
+      "defined_class": "dev_reza.spring_webmvc.controller.UploadControllerTest",
+      "event": "call",
+      "id": 1,
+      "lineno": 29,
+      "method_id": "testUpload",
+      "path": "src/test/java/dev_reza/spring_webmvc/controller/UploadControllerTest.java",
+      "receiver": {
+        "class": "dev_reza.spring_webmvc.controller.UploadControllerTest",
+        "object_id": 1772106148,
+        "value": "dev_reza.spring_webmvc.controller.UploadControllerTest@69a031a4"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "event": "call",
+      "http_server_request": {
+        "headers": {
+          "Content-Type": "multipart/form-data;charset=UTF-8"
+        },
+        "normalized_path_info": "/upload/profile",
+        "path_info": "/upload/profile",
+        "protocol": "HTTP/1.1",
+        "request_method": "POST"
+      },
+      "id": 2,
+      "message": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "name",
+          "object_id": 1699593080,
+          "value": "Reza"
+        }
+      ],
+      "thread_id": 1
+    },
+    {
+      "defined_class": "dev_reza.spring_webmvc.controller.UploadController",
+      "event": "call",
+      "id": 3,
+      "lineno": 25,
+      "method_id": "upload",
+      "parameters": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "name",
+          "object_id": 1699593080,
+          "value": "Reza"
+        },
+        {
+          "class": "org.springframework.mock.web.MockMultipartFile",
+          "kind": "req",
+          "name": "file",
+          "object_id": 498759457,
+          "value": "org.springframework.mock.web.MockMultipartFile@1dba7721"
+        }
+      ],
+      "path": "src/main/java/dev_reza/spring_webmvc/controller/UploadController.java",
+      "receiver": {
+        "class": "dev_reza.spring_webmvc.controller.UploadController",
+        "object_id": 736233691,
+        "value": "dev_reza.spring_webmvc.controller.UploadController@2be208db"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.00172105,
+      "event": "return",
+      "id": 4,
+      "parent_id": 3,
+      "return_value": {
+        "class": "java.lang.String",
+        "object_id": 485998677,
+        "value": "Success save Reza to upload\\profile.png"
+      },
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.03497228,
+      "event": "return",
+      "http_server_response": {
+        "headers": {
+          "Content-Length": "39",
+          "Content-Type": "text/plain;charset=UTF-8"
+        },
+        "status": 200
+      },
+      "id": 5,
+      "parent_id": 2,
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.05808722,
+      "event": "return",
+      "id": 6,
+      "parent_id": 1,
+      "thread_id": 1
+    }
+  ],
+  "version": "1.2",
+  "metadata": {
+    "name": "Upload controller test upload",
+    "app": "spring-webmvc",
+    "language": {
+      "name": "java",
+      "version": "17.0.10+11-LTS-240",
+      "engine": "Java HotSpot(TM) 64-Bit Server VM"
+    },
+    "client": {
+      "name": "appmap-java",
+      "url": "https://github.com/appland/appmap-java"
+    },
+    "recorder": {
+      "name": "junit",
+      "type": "tests"
+    },
+    "recording": {
+      "defined_class": "dev_reza.spring_webmvc.controller.UploadControllerTest",
+      "method_id": "testUpload"
+    },
+    "git": {
+      "repository": "https://github.com/rezaregata/belajar-springboot.git",
+      "branch": "master",
+      "commit": "7f356b7825ff0e7f2aeab371752056c9c3cb9e30"
+    },
+    "source_location": "src/test/java/dev_reza/spring_webmvc/controller/UploadControllerTest.java:29",
+    "frameworks": [
+      {
+        "name": "JUnit",
+        "version": "5"
+      }
+    ],
+    "test_status": "succeeded"
+  },
+  "classMap": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "name": "testUpload",
+                      "type": "function",
+                      "static": false,
+                      "location": "src/test/java/dev_reza/spring_webmvc/controller/UploadControllerTest.java:29"
+                    }
+                  ],
+                  "name": "UploadControllerTest",
+                  "type": "class"
+                },
+                {
+                  "children": [
+                    {
+                      "name": "upload",
+                      "type": "function",
+                      "static": false,
+                      "location": "src/main/java/dev_reza/spring_webmvc/controller/UploadController.java:25"
+                    }
+                  ],
+                  "name": "UploadController",
+                  "type": "class"
+                }
+              ],
+              "name": "controller",
+              "type": "package"
+            }
+          ],
+          "name": "spring_webmvc",
+          "type": "package"
+        }
+      ],
+      "name": "dev_reza",
+      "type": "package"
+    },
+    {
+      "type": "http",
+      "name": "HTTP server requests",
+      "children": [
+        {
+          "type": "route",
+          "name": "POST /upload/profile"
+        }
+      ]
+    }
+  ]
+}

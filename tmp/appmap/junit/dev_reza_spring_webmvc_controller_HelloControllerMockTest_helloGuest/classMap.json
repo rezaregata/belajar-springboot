@@ -1,0 +1,54 @@
+[
+  {
+    "children": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "name": "helloGuest",
+                    "type": "function",
+                    "static": false,
+                    "location": "dev_reza/spring_webmvc/controller/HelloControllerMockTest.java:40"
+                  }
+                ],
+                "name": "HelloControllerMockTest",
+                "type": "class"
+              },
+              {
+                "children": [
+                  {
+                    "name": "helloWorld",
+                    "type": "function",
+                    "static": false,
+                    "location": "dev_reza/spring_webmvc/controller/HelloController.java:21"
+                  }
+                ],
+                "name": "HelloController",
+                "type": "class"
+              }
+            ],
+            "name": "controller",
+            "type": "package"
+          }
+        ],
+        "name": "spring_webmvc",
+        "type": "package"
+      }
+    ],
+    "name": "dev_reza",
+    "type": "package"
+  },
+  {
+    "type": "http",
+    "name": "HTTP server requests",
+    "children": [
+      {
+        "type": "route",
+        "name": "GET /hello"
+      }
+    ]
+  }
+]

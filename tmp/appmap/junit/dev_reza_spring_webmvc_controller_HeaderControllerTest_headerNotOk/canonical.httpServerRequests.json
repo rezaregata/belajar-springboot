@@ -1,0 +1,7 @@
+[
+  {
+    "route": "GET /header/token",
+    "parameters": "()",
+    "status": 200
+  }
+]
