@@ -9,6 +9,4 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class HelloResponse {
     private String hello;
-
-    
 }
