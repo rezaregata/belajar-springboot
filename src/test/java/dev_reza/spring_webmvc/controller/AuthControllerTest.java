@@ -1,5 +1,6 @@
 package dev_reza.spring_webmvc.controller;
 
+import jakarta.servlet.http.Cookie;
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,11 +9,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 @SpringBootTest
 @AutoConfigureMockMvc
@@ -29,7 +29,8 @@ class AuthControllerTest {
                         .param("password", "rahasia")
         ).andExpectAll(
                 status().isOk(),
-                content().string(Matchers.containsString("OK"))
+                content().string(Matchers.containsString("OK")),
+                cookie().value("username", Matchers.is("reza"))
         );
     }
 
@@ -43,6 +44,17 @@ class AuthControllerTest {
         ).andExpectAll(
                 status().isUnauthorized(),
                 content().string(Matchers.containsString("KO"))
+        );
+    }
+
+    @Test
+    void getUser() throws Exception {
+        mockMvc.perform(
+                get("/auth/user")
+                        .cookie(new Cookie("username", "reza"))
+        ).andExpectAll(
+                status().isOk(),
+                content().string(Matchers.containsString("Hello reza"))
         );
     }
 }
